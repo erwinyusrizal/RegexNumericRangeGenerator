@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Regex Numeric Range Generator</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="RegNumericRange.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <div id="loader"><img src="loader.gif" /></div>
+    <div class="container">
+      <h1>Regex Numeric Range Generator</h1>
+      <div id="message"></div>
+      <form id="generate">
+          <div class="form-group">
+              <label for="min-value">Min. Value</label>
+              <input type="text" placeholder="Minimum Integer Value" id="min-value" maxlength="13" value="">
+          </div>
+          <div class="form-group">
+              <label for="max-value">Max. Value</label>
+              <input type="text" placeholder="Minimum Integer Value" id="max-value" maxlength="13" value="">
+          </div>
+          <div class="form-group">
+              <label for="max-value">Options</label>
+              <div class="checkboxes">
+                <label for="mww"><input type="checkbox" name="mww" id="mww" value="true"/> Match Whole Word</label>
+                <label for="mwl"><input type="checkbox" name="mwl" id="mwl" value="true"/> Match Whole Line</label>
+                <label for="mlz"><input type="checkbox" name="mlz" id="mlz" value="true"/> Match Leading Zero</label>
+                <label for="verbose"><input type="checkbox" name="verbose" id="verbose" value="true"/> Show the Process Step by Step</label>
+              </div>
+          </div>
+          <div class="form-group">
+              <button type="submit" name="button">Generate Regex</button>
+          </div>
+      </form>
+      <h2>Result</h2>
+      <div id="result">
+          <textarea id="pattern" readonly=""></textarea>
+          <button type="button" name="button" id="copytoclipboard" data-clipboard-target="#pattern">Copy to Clipboard</button>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2015. Erwin Yusrizal - <a href="http://www.testing.agency" title="Testing Agency - A/B Testing Agency">Testing.Agency</a></p>
+  </body>
+</html>

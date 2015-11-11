@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,400italic);
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Open Sans', sans-serif;
+    font-size: 13px;
+    background: #eee;
+    color: #383838;
+}
+
+h1, h2{
+    margin: 0;
+    padding: 20px;
+    background: #ffffff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #ffffff 0%, #eaebeb 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eaebeb));
+    background: -webkit-linear-gradient(top, #ffffff 0%,#eaebeb 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#eaebeb 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#eaebeb 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#eaebeb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaebeb',GradientType=0 );
+    padding: 10px 20px;
+    text-shadow: 0px 1px 1px #fff;
+    text-align: center;
+    font-size: 18px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+h1{
+    border-top: none;
+}
+
+.container{
+    max-width: 400px;
+    margin:100px auto 20px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 0px 5px rgba(0,0,0,0.1);
+}
+
+form{
+    margin: 0;
+    padding: 0 20px;
+}
+
+form .form-group{
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form label{
+    width:100px;
+    display: block;
+    float: left;
+    padding-top: 7px;
+    font-weight: bold;
+}
+
+form .form-group .checkboxes{
+    margin-left: 100px;
+}
+
+form .form-group .checkboxes input[type="checkbox"]{
+    display: block;
+    float: left;
+}
+
+form .form-group .checkboxes label{
+    width: auto;
+    display: block;
+    float: none;
+    font-weight: normal;
+}
+
+form input[type="text"]{
+    border: 1px solid #ccc;
+    padding: 7px 10px;
+    width: 238px;
+}
+
+button{
+    background: #FEDD32;
+    color: #000;
+    padding: 7px 15px;
+    border: none;
+    font-weight: bold;
+    border: 1px solid #C9A901;
+    display: block;
+    width: 100%;
+}
+
+#result{
+    padding: 20px;
+}
+
+#result textarea{
+    width: 98.5%;
+    border: 1px solid #ccc;
+    min-height: 200px;
+    margin-bottom: 5px;
+}
+
+#console{
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #000;
+}
+
+#console h2{
+    border-left: 1px solid rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+#console .console-wrapper{
+    overflow: auto;
+}
+
+#console ul{
+    padding:0 20px;
+}
+
+#console ul li{
+    list-style: none;
+}
+
+#console ul li.title{
+    color: #FFF;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+#console ul li.step{
+    color: #FEDD32;
+}
+
+#console ul li.list-error{
+    color: #F06;
+    margin-top: 20px;
+}
+
+#message{
+    padding: 20px;
+}
+
+.copyright{
+    margin-bottom: 0;
+    text-shadow: 0px 1px 1px #fff;
+    text-align: center;
+
+}
+
+#loader{
+    position: fixed;
+    width:64px;
+    height: 64px;
+    top: 10px;
+    left: 50%;
+    margin-left: -32px;
+    display: none;
+}
+
+.error{
+    background: red;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.success{
+    background: green;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
