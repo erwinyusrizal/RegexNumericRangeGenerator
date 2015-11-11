@@ -23,7 +23,7 @@ var objReg = RegNumericRange(minValue, maxValue, {
     MatchWholeWord: true,
     MatchWholeLine: true,
     MatchLeadingZero: true,
-    showProcess: false //if true will generate a console
+    showProcess: false //if true will generate a process object
 }).generate();
 
 console.log(objReg);
