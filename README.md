@@ -13,29 +13,26 @@ showProcess: Boolean (default: false)
 
 ### Save The Output in a variable
 ```
-var strReg = RegNumericRange(minValue, maxValue, {
-    MatchWholeWord: mww ? true : false,
-    MatchWholeLine: mwl ? true : false,
-    MatchLeadingZero: mlz ? true : false,
-    showProcess: verbose ? true : false
+var objReg = RegNumericRange(minValue, maxValue, {
+    MatchWholeWord: true,
+    MatchWholeLine: true,
+    MatchLeadingZero: true,
+    showProcess: false //if true will generate a console
 }).generate();
+
+console.log(objReg);
+
 ```
 
 ### Use Callback
 ```
 RegNumericRange(minValue, maxValue, {
-    MatchWholeWord: mww ? true : false,
-    MatchWholeLine: mwl ? true : false,
-    MatchLeadingZero: mlz ? true : false,
-    showProcess: verbose ? true : false
+    MatchWholeWord: true,
+    MatchWholeLine: true,
+    MatchLeadingZero: true,
+    showProcess: false //if true will generate a process object
 }).generate(function(result){
-    $('#loader').hide();
-    if(result.success){
-        $('#message').empty();
-        $('#result textarea').val(result.pattern);
-    }else{
-        $('#message').html('<div class="error">'+result.message+'</div>');
-    }
+    console.log(result);
 });
 ```
 

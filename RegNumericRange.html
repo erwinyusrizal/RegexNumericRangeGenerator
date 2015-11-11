@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>Regex Numeric Range Generator</title>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
-    <script type="text/javascript" src="RegNumericRange.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="RegNumericRange.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </head>
   <body>
@@ -42,6 +42,12 @@
           <button type="button" name="button" id="copytoclipboard" data-clipboard-target="#pattern">Copy to Clipboard</button>
       </div>
     </div>
-    <p class="copyright">&copy; 2015. Erwin Yusrizal - <a href="http://www.testing.agency" title="Testing Agency - A/B Testing Agency">Testing.Agency</a></p>
+    <p class="copyright">&copy; 2015. Erwin Yusrizal - <a href="http://www.testing.agency" title="A/B Testing Agency">Testing.Agency</a></p>
+    <div id="console">
+      <h2>Console</h2>
+      <div class="console-wrapper">
+        <ul></ul>
+      </div>
+    </div>
   </body>
 </html>

@@ -29,12 +29,37 @@ $(function(){
             $('#loader').hide();
             if(result.success){
                 $('#message').empty();
-                $('#result textarea').val(result.pattern);
+                $('#result textarea').val(result.data.pattern);
+                if(verbose){
+                    var list = '';
+                    for(i in result.data.process){
+                        list += '<li class="title">'+result.data.process[i].title+'</li>';
+                        for(a in result.data.process[i].steps){
+                          list += '<li class="step">'+result.data.process[i].steps[a]+'</li>';
+                        }
+                    }
+                    var wrapperHeight = $(window).innerHeight() - 83;
+                    $('#console .console-wrapper').css('height', wrapperHeight);
+                    $('#console ul').html(list);
+                }
             }else{
                 $('#message').html('<div class="error">'+result.message+'</div>');
             }
         });
 
+    });
+
+    $('input[name="verbose"]').on("change", function(e){
+        if($(this).is(':checked')){
+            $('#console').animate({
+                right:0
+            });
+        }else{
+          $('#console ul').html("");
+          $('#console').animate({
+              right:-300
+          });
+        }
     });
 
     var clipboard = new Clipboard('#copytoclipboard');

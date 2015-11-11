@@ -111,7 +111,7 @@ button{
     width: 300px;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -300px;
     height: 100%;
     background: #000;
 }
