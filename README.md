@@ -1,6 +1,12 @@
 # Regex Numeric Range Generator
 Simple Regex Numeric Range Generator - inspired by <http://utilitymill.com/utility/Regex_For_Range> since the website is down very often, I create this version using Javascript
 
+## Demo
+[Demo] - Check the online demo page
+
+[Demo]: <http://gamon.webfactional.com/regexnumericrangegenerator/>
+
+
 ## Usage
 
 ### Options
